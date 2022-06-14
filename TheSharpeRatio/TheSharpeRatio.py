@@ -16,8 +16,8 @@ st.header('Data Processing')
 st.write("We will read in our data from csv file format and set the index to a datetime object.")
 # Reading in the data
 st.code('''
-stock_data = pd.read_csv('stock_data.csv',parse_dates=True,index_col='Date')
-benchmark_data = pd.read_csv('benchmark_data.csv',parse_dates=True,index_col='Date')
+stock_data = pd.read_csv('dataset/stock_data.csv',parse_dates=True,index_col='Date')
+benchmark_data = pd.read_csv('dataset/benchmark_data.csv',parse_dates=True,index_col='Date')
 stock_data=stock_data.dropna()
 benchmark_data=benchmark_data.dropna()
 ''')
