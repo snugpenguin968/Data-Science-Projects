@@ -23,9 +23,9 @@ benchmark_data=benchmark_data.dropna()
 ''')
 
 
-stock_data = pd.read_csv('stock_data.csv',parse_dates=True,index_col='Date')
+stock_data = pd.read_csv('dataset/stock_data.csv',parse_dates=True,index_col='Date')
 
-benchmark_data = pd.read_csv('benchmark_data.csv',parse_dates=True,index_col='Date')
+benchmark_data = pd.read_csv('dataset/benchmark_data.csv',parse_dates=True,index_col='Date')
 stock_data=stock_data.dropna()
 benchmark_data=benchmark_data.dropna()
 st.write('Here, we look at the datasets')
