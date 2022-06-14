@@ -33,13 +33,7 @@ st.caption('Stock Data')
 st.dataframe(stock_data.head())
 st.caption('Benchmark Data')
 st.dataframe(benchmark_data.head())
-"""
-print('Stocks\n')
-print(stock_data.info())
-print('\nBenchmarks\n')
-print(benchmark_data.info())
-print(stock_data.head())
-"""
+
 st.header('Visualize the Stock Data')
 st.line_chart(stock_data)
 #stock_data.plot(subplots=True,title='Stock Data')
