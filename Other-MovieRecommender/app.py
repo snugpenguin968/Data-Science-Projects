@@ -12,8 +12,6 @@ number=st.number_input('Enter Number of Recommendations',max_value=20)
 
 movies=pd.read_csv('dataset/movies.csv')
 ratings=pd.read_csv('dataset/ratings.csv')
-tags=pd.read_csv('dataset/genome-tags.csv')
-tag_relevance=pd.read_csv('dataset/genome-scores.csv')
 
 final_dataset = ratings.pivot(index='movieId',columns='userId',values='rating')
 final_dataset.fillna(0,inplace=True)
