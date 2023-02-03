@@ -8,7 +8,7 @@ from sklearn.neighbors import NearestNeighbors
 st.title('Movie Recommendation System')
 st.write('Simple Item-Based Collaborative Filtering on user reviews with the K-Nearest-Neighbors Algorithm🎬')
 title=st.text_input('Enter Movie Title (Case-Sensitive)','Star Wars')
-number=st.number_input('Enter Number of Recommendations',max_value=20)
+number=st.number_input('Enter Number of Recommendations',min_value=1,max_value=20)
 
 movies=pd.read_csv('dataset/movies.csv')
 ratings=pd.read_csv('dataset/ratings.csv')
